@@ -1,0 +1,7 @@
+configuration {
+	theme: "/home/alejandrojimenez/.config/polybar/forest/scripts/rofi/styles.rasi";
+	font: "Terminus 9";
+	modi: "window,drun,ssh,combi";
+	terminal: "alacritty";
+}
+
