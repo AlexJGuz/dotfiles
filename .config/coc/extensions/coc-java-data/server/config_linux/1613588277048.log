@@ -1,0 +1,10 @@
+!SESSION Wed Feb 17 12:57:57 CST 2021 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2021-02-17 12:57:57.055
+!MESSAGE Exception launching the Eclipse Platform:
+!STACK
+java.io.FileNotFoundException: Could not find framework under /home/alejandrojimenez/.config/coc/extensions/coc-java-data/server/plugins
+	at org.eclipse.equinox.launcher.Main.getBootPath(Main.java:975)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:570)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
+

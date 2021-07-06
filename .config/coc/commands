@@ -1,0 +1,15 @@
+java.updateLanguageServer
+java.open.serverLog
+editor.action.pickColor
+java.clean.workspace
+prettier.formatFile
+snippets.openSnippetFiles
+snippets.editSnippets
+document.echoFiletype
+workspace.workspaceFolders
+workspace.showOutput
+java.action.organizeImport
+java.workspace.compile
+java.open.formatter.settings
+java.home
+java.Path

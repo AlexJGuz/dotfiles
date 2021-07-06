@@ -1,0 +1,167 @@
+!SESSION 2021-03-10 11:58:38.675 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Red Hat, Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_MX
+Command-line arguments:  -data /home/alejandrojimenez/.config/coc/extensions/coc-java-data/jdt_ws_91b2f0fbd39f00b15635842cca40de53
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.173
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.678
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.780
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.789
+!MESSAGE Initializing Java Language Server 0.70.0.202102250216
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.850
+!MESSAGE Setting /usr/lib/jvm/java-11-openjdk-11.0.10.0.9-0.fc33.x86_64 as 'JavaSE-11' environment (id:1615399127837)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.851
+!MESSAGE JVM Runtimes changed, saving new configuration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.865
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.866
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:47.967
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:48.306
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-03-10 11:58:50.170
+!MESSAGE Failed to read package name from file:/home/alejandrojimenez/Projects/Java/Escuela/ProgramaBeca/Main.java
+!STACK 0
+java.io.FileNotFoundException: /home/alejandrojimenez/Projects/Java/Escuela/ProgramaBeca/Main.java (No existe el fichero o el directorio)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:130)
+	at com.google.common.io.Files$FileByteSource.read(Files.java:154)
+	at com.google.common.io.ByteSource$AsCharSource.read(ByteSource.java:470)
+	at com.google.common.io.Files.toString(Files.java:254)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.getPackageName(JDTUtils.java:297)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:280)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:258)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:248)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:187)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.importToWorkspace(InvisibleProjectImporter.java:94)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:113)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:102)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:188)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:50.175
+!MESSAGE Try to create an invisible project for the workspace /home/alejandrojimenez/Projects/Java/Escuela/ProgramaBeca
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:50.176
+!MESSAGE Creating the Java project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:50.192
+!MESSAGE Finished creating the Java project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:50.202
+!MESSAGE Successfully created a workspace invisible project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:50.221
+!MESSAGE Workspace initialized in 2350ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:51.160
+!MESSAGE >> Updating classpath for project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:51.625
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-10 11:58:51.702
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+!SESSION 2021-03-21 21:05:49.618 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Red Hat, Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_MX
+Command-line arguments:  -data /home/alejandrojimenez/.config/coc/extensions/coc-java-data/jdt_ws_91b2f0fbd39f00b15635842cca40de53
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-21 21:05:54.686
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.070
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.455
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.549
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.563
+!MESSAGE Initializing Java Language Server 0.70.0.202102250216
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.606
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:57.606
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:58.658
+!MESSAGE >> Updating classpath for project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:59.323
+!MESSAGE Workspace initialized in 1714ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:59.845
+!MESSAGE >> Updating classpath for project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:59.886
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:05:59.896
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+!SESSION 2021-03-21 21:06:50.683 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Red Hat, Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_MX
+Command-line arguments:  -data /home/alejandrojimenez/.config/coc/extensions/coc-java-data/jdt_ws_91b2f0fbd39f00b15635842cca40de53
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-21 21:06:52.413
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.006
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.170
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.222
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.231
+!MESSAGE Initializing Java Language Server 0.70.0.202102250216
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.256
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:53.256
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:54.296
+!MESSAGE >> Updating classpath for project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:54.510
+!MESSAGE Workspace initialized in 1251ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:54.981
+!MESSAGE >> Updating classpath for project ProgramaBeca_7305d291
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:55.059
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-03-21 21:06:55.062
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'

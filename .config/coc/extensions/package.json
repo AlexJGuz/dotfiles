@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-jedi": ">=0.20.5",
+    "coc-json": ">=1.3.4",
+    "coc-marketplace": ">=1.8.0",
+    "coc-prettier": ">=1.1.21",
+    "coc-snippets": ">=2.4.1"
+  }
+}

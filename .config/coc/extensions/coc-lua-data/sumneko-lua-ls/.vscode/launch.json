@@ -1,0 +1,37 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "🍺测试",
+			"type": "lua",
+			"request": "launch",
+			"stopOnEntry": false,
+			"program": "${workspaceRoot}/test.lua",
+			"luaexe": "${workspaceFolder}/bin/Windows/lua-language-server.exe",
+			"linux": {
+				"luaexe": "${workspaceFolder}/bin/Linux/lua-language-server"
+			},
+			"osx": {
+				"luaexe": "${workspaceFolder}/bin/macOS/lua-language-server"
+			},
+			"arg": [
+			],
+			"consoleCoding": "utf8",
+			"sourceCoding": "utf8",
+			"outputCapture": [
+				"print",
+				"stderr",
+			],
+		},
+		{
+			"name": "附加",
+			"type": "lua",
+			"request": "attach",
+			"stopOnEntry": true,
+			"address": "127.0.0.1:11427",
+			"outputCapture": [
+			]
+		},
+	]
+}
