@@ -39,3 +39,15 @@ vim.g.rainbow_delimiters = {
         'RainbowDelimiterCyan',
     },
 }
+
+-- For HTML files
+
+vim.api.nvim_create_autocmd({
+    "FileType",
+},{
+    pattern = "html",
+    callback = function(args)
+        vim.opt.shiftwidth = 2
+        vim.opt.tabstop = 2
+    end
+})
