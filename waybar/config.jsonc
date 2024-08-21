@@ -1,0 +1,152 @@
+// Global 
+{
+    "layer": "top",
+    "position": "top",
+    "margin": 5,
+    "height": 30,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "hyprland/window",
+    ],
+ 
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "memory",
+        "cpu",
+        "backlight",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "battery",
+        "tray",
+    ],
+
+    // Modules
+    "bluetooth": {
+        "format_on": " 󰂲 ",
+        "format_off": "󰂯 : {num_connections}",
+        "tooltip": false,
+        "tooltip-format": "{device_enumerate}",
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "clock": {
+        "format": "{:L%A, %B %d, %Y (%R)}  ",
+        "format-alt": "{:%H:%M}  ",
+        "tooltip-format": "\n<span font='Iosevka Nerd Font'>{calendar}</span>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "  {usage}% ({load})",
+        "states": {
+            "warning": 70,
+            "critical": 90,
+        },
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "  {}%",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 120
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "disable-markup" : false,
+        "all-outputs": true,
+        "active-only": false,
+        "format": "  {name}  ",
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
+        "format-muted": "󰸈",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "וֹ",
+            "headset": "  ",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [""]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " ",
+        "on-click": "pamixer --default-source -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing":10,
+    },
+
+    "backlight" :{
+         "format": "{icon}  {percent}%",
+        "format-icons": [""],
+         "on-scroll-down": "brightnessctl -c backlight set 1%-",
+         "on-scroll-up": "brightnessctl -c backlight set +1%"
+    },
+
+    "custom/launcher": {
+        "format":" ",
+        "on-click": "exec wofi",
+        "tooltip": false,
+    },
+}
