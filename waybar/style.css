@@ -144,8 +144,6 @@ window#waybar {
 }
 
 #mode {
-    /* background: @highlight; */
-    /* background: #dfdfdf; */
     border-bottom: 3px transparent;
     color:#ff4499;
     margin-left: 5px;
@@ -165,6 +163,10 @@ window#waybar {
     border-right: 0px;
     margin-right: 0;
     border-radius: 20px 0 0 20px;
+}
+
+#pulseaudio.bluetooth {
+    color: @sky;
 }
 
 #pulseaudio.microphone {
@@ -210,7 +212,7 @@ window#waybar {
 #workspaces button.active {
     border-bottom: 1px solid  @mauve;
     margin-bottom: 1px;
-    padding-left:0;
+    padding-left: 0;
 }
 
 #workspaces button.urgent {
@@ -232,4 +234,8 @@ window#waybar {
 #backlight.icon {
     padding-right:1px;
     font-size: 13px;
+}
+
+#idle_inhibitor {
+  color: @maroon;
 }

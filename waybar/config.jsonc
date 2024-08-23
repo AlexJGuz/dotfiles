@@ -6,8 +6,8 @@
     "height": 30,
 
     "modules-left": [
-        "custom/launcher",
         "hyprland/workspaces",
+        "privacy",
         "hyprland/window",
     ],
  
@@ -23,9 +23,33 @@
         "pulseaudio#microphone",
         "battery",
         "tray",
+        "idle_inhibitor",
     ],
 
     // Modules
+
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 14,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    },
     "bluetooth": {
         "format_on": " 󰂲 ",
         "format_off": "󰂯 : {num_connections}",
@@ -95,7 +119,7 @@
     "hyprland/workspaces": {
         "disable-scroll": true,
         "disable-markup" : false,
-        "all-outputs": true,
+        "all-outputs": false,
         "active-only": false,
         "format": "  {name}  ",
     },
@@ -144,9 +168,11 @@
          "on-scroll-up": "brightnessctl -c backlight set +1%"
     },
 
-    "custom/launcher": {
-        "format":" ",
-        "on-click": "exec wofi",
-        "tooltip": false,
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰅶",
+            "deactivated": "󰾪"
+        }
     },
 }

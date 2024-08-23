@@ -107,6 +107,19 @@ require("mason-lspconfig").setup_handlers {
             }
         }
     end,
+    ['cssls'] = function()
+        require("lspconfig").cssls.setup{
+            capabilities = capabilities,
+            settings = {
+                css = {
+                    lint = {
+                        unkownAtRules = "ignore",
+                    }
+                }
+            }
+        }
+    end,
+
 }
 
 

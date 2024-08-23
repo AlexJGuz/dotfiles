@@ -45,9 +45,9 @@ vim.g.rainbow_delimiters = {
 vim.api.nvim_create_autocmd({
     "FileType",
 },{
-    pattern = "html",
+    pattern = {"html", "css"},
     callback = function(args)
-        vim.opt.shiftwidth = 2
-        vim.opt.tabstop = 2
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
     end
 })
