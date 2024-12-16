@@ -3,7 +3,14 @@ require("config.keys.cpp")
 require("config.options")
 require("config.lazy")
 require("config")
-require("snippets")
+-- require("snippets")
+
+-- Load Snippets
+require("luasnip.loaders.from_snipmate").lazy_load({paths = "./lua/snippets"})
+vim.g.snips_author = "Alejandro Jimenez Guzman"
+vim.g.snips_email = "alexjimenezguz@gmail.com"
+vim.g.snips_github = "@AlexJzG"
+
 
 -- Terminal Setup
 require("toggleterm").setup{
