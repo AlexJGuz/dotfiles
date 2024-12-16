@@ -94,6 +94,10 @@ window#waybar {
 
 }
 
+#battery.charging {
+    color: @green;
+}
+
 #battery.warning {
     color: @peach;
 }

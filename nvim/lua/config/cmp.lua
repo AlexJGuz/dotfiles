@@ -67,7 +67,7 @@ cmp.setup({
     }),
     experimental = {
         native_menu = false,
-        ghost_text = true,
+        ghost_text = false,
     }
 })
 
@@ -102,7 +102,8 @@ require("mason-lspconfig").setup_handlers {
                 clangd = {
                     arguments = {
                         "--header-insertion=never",
-                    }
+                    },
+                    enable = false,
                 }
             }
         }

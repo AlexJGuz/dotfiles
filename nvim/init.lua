@@ -40,6 +40,9 @@ vim.g.rainbow_delimiters = {
     },
 }
 
+-- Git
+require('gitsigns').setup()
+
 -- For HTML files
 
 vim.api.nvim_create_autocmd({

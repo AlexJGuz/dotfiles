@@ -66,7 +66,8 @@
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "interval": 5
     },
 
     "clock": {
@@ -113,7 +114,7 @@
 
     "hyprland/window": {
         "format": "{title}",
-        "max-length": 120
+        "max-length": 120,
     },
 
     "hyprland/workspaces": {

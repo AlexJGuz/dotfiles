@@ -13,7 +13,7 @@ keymap.set("n", "bd", ":bd<CR>", opts)
 
 -- Terminal
 keymap.set("n", "<leader>t", "<Cmd>exe v:count1 . 'ToggleTerm'<CR>") -- Open Terminal
-keymap.set("i", "<leader>t", "<ESC><Cmd>exe v:count1 . 'ToggleTerm'<CR>")
+-- keymap.set("i", "<leader>t", "<ESC><Cmd>exe v:count1 . 'ToggleTerm'<CR>")
 keymap.set("t", "jk", [[<C-\><C-n>]]) 
 keymap.set("t", "<ESC>", [[<C-\><C-n>]]) 
 keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
