@@ -7,10 +7,6 @@ require("config")
 
 -- Load Snippets
 require("luasnip.loaders.from_snipmate").lazy_load({paths = "./lua/snippets"})
-vim.g.snips_author = "Alejandro Jimenez Guzman"
-vim.g.snips_email = "alexjimenezguz@gmail.com"
-vim.g.snips_github = "@AlexJzG"
-
 
 -- Terminal Setup
 require("toggleterm").setup{
@@ -55,7 +51,7 @@ require('gitsigns').setup()
 vim.api.nvim_create_autocmd({
     "FileType",
 },{
-    pattern = {"html", "css"},
+    pattern = {"html", "css", "js"},
     callback = function(args)
         vim.opt_local.shiftwidth = 2
         vim.opt_local.tabstop = 2
